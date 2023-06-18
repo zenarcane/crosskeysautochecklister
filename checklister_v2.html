@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A link to the past randomizer - Checklister</title>
+    <meta charset="utf-8">
+  <script type="text/javascript" src="./autot2.js"></script>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+	
+	
+	
+<style>
+	body {
+		margin: 10px;
+		background-color: #000;
+	}
+	.wrapper {
+		display: grid;
+    	grid-gap: 6px;
+		grid-template-columns: 80px 80px 80px 80px 80px 80px;
+		color: #444;
+	}
+
+	.location {
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 80%;
+		font-family: Arial, Helvetica, sans-serif;
+		opacity: 1.0;
+		text-align: center;
+	}
+
+	.location.single {
+		background-color: #2E8B57;
+	}
+
+	.location.bunny {
+		background-color: #0571b0;
+	}
+
+	.location.special {
+		background-color: #ca0020;
+	}
+
+	.location.double {
+		background-color: #0c5f25;
+	}
+
+	.location.connector {
+		background-color: #762a83;
+	}
+
+	.location.multiple {
+		background-color: #744d26;
+	}
+
+	.location.dropdown {
+		background-color: #444;
+	}
+
+	.entrance {
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 80%;
+		font-family: Arial, Helvetica, sans-serif;
+		opacity: 1.0;
+		text-align: center;
+	}
+
+	.entrance.simple {
+		background-color: #ca0020;
+	}
+
+	.entrance.dark {
+		background-color: #0571b0;
+	}
+
+	.entrance.check {
+		background-color: #762a83;
+	}
+
+	.entrance.dungeon {
+		background-color: #1b7837;
+	}
+
+	.entrance.other {
+		background-color: #4d4d4d;
+	}
+
+	.key {
+		color: #fff;
+		border-radius: 5px;
+		padding: 15px;
+		font-size: 80%;
+		font-family: Arial, Helvetica, sans-serif;
+		opacity: 1.0;
+		text-align: center;
+	}
+
+	.blank {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 80%;
+		font-family: Arial, Helvetica, sans-serif;
+		opacity: 0.0;
+		text-align: center;
+	}
+
+   </style>
+	<script type="text/javascript">
+	
+	function toggle_chest(x) {
+		var element = document.getElementById(x).click()
+		
+	};
+	</script>
+   <script type="text/javascript">
+	
+   //<![CDATA[ 
+	$(window).load(function(){
+	$(function() {
+	    $(".location").click(function(){
+	    	var opacity = $(this).css("opacity")
+	    	if (opacity == 1) {
+				$(this).css("opacity", "0.3")
+	    	} else {
+	    		$(this).css("opacity", "1.0")
+	    	}
+	    })
+
+	    $(".entrance").click(function(){
+	    	var opacity = $(this).css("opacity")
+	    	if (opacity == 1) {
+				$(this).css("opacity", "0.3")
+	    	} else {
+	    		$(this).css("opacity", "1.0")
+	    	}
+	    })
+	})
+	})
+	</script>
+</head>
+
+ <body onload="autotrackConnect()">
+	
+	 <div class="wrapper">
+		<div id="9"  class="location single">Aginah</div> <!--Aginah-->
+		<div id="18"  class="location single">Bonk Rocks</div> <!--Bonk Rocks-->
+		<div id="7"  class="location single">Bombable Hut</div> <!--Bombable Hut-->
+		<div id="8"  class="location single">C House</div> <!--C-House-->
+		<div id="10"  class="location double">Mire Shed</div> <!--Mire Shed-->
+		<div id="61"  class="location double">Pyramid Fairy</div> <!--Pyramid Fairy-->
+
+		<div id="23"  class="location single">Chest Game</div> <!--Chest Game-->
+		<div id="6" class="location single">Chicken Hut</div> <!--Chicken Hut-->
+		<div id="40"  class="location single">Graveyard Ledge</div> <!--Graveyard Ledge-->
+		<div id="20"  class="location single">Ice Rod Cave</div> <!--Ice Rod Cave-->
+		<div id="64"  class="location double">Waterfall Fairy</div> <!--Waterfall Fairy-->
+		<div id="11"  class="location double">Superbunny</div> <!--Superbunny Cave-->
+
+		<div id="0"  class="location single">King's</div> <!--King's Tomb-->
+		<div id="43"  class="location single">Library</div> <!--Library-->
+		<div id="4"  class="location single">Mimic</div> <!--Mimic Cave-->
+		<div id="13"  class="location single">Spike</div> <!--Spike Cave-->
+		<div id="15"  class="location multiple">Blind 4</div> <!--Blind's Hut-->
+		<div id="26" class="location single">Blind 1</div>
+		<div id="16"  class="location multiple">Hype 4</div> <!--Hype Cave-->
+		<div id="27" class="location single">Hype 1</div>
+
+		<div id="41"  class="location single">Checker board</div> <!--Checkerboard Cave-->
+		<div id="3"  class="location single">Spiral</div> <!--Spiral Cave-->
+		<div id="42"  class="location single">Hammer</div> <!--Hammer Pegs-->
+		<div id="19" class="location multiple">Mini Moldorm</div> <!--Mini Moldorm-->
+		<div id="21" class="location single">Hook 1</div>
+		<div id="22"  class="location multiple">Hook 3</div> <!--Hookshot Cave-->
+		<div id="17" class="location multiple">Para 5</div> <!--Paradox Cave-->
+		<div id="24" class="location double">Para 2</div>
+
+		<div id="39"  class="location single">Cave 45</div> <!--Cave 45-->
+		<div id="38"  class="location single">Spec Rock</div> <!--Spectacle Rock-->
+		<div id="14"  class="location dropdown">Kak 4</div> <!---->
+		<div id="25" class="location dropdown">Kak 1</div>
+		<div class="location dropdown">Escape</div> <!---->
+		<div class="location dropdown">Fairy Cave</div> <!---->
+		<div class="location dropdown">Ganon</div> <!---->
+
+		<div id="12"  class="location special">Saha's Hut</div> <!---->
+		<div id="1" class="location special">Dam</div> <!---->
+		<div id="36"  class="location dropdown">Lost Woods</div> <!---->
+		<div id="37"  class="location dropdown">Lumber-jack</div> <!---->
+		<div id="59"  class="location dropdown">Magic Bat</div> <!---->
+		<div id="56"  class="location dropdown">Uncle</div> <!---->
+	</div>
+	<br>
+	<br>
+	<div class="wrapper">
+		<div class="entrance simple">Twins</div>
+		<div class="entrance simple">Twins</div>
+		<div class="entrance simple">Elder Home</div>
+		<div class="entrance simple">Elder Home</div>
+		<div class="entrance simple">Fairy<br>Ascension</div>
+		<div class="entrance simple">Fairy<br>Ascension</div>
+
+		<div class="entrance dark">DM Descent</div>
+		<div class="entrance dark">DM Descent</div>
+		<div class="entrance dark">Lost<br>Old Man</div>
+		<div class="entrance dark">Lost<br>Old Man</div>
+		<div class="entrance dark">Old Man Cave</div>
+		<div class="entrance dark">Old Man Cave</div>
+		
+		<div class="entrance check">Paradox Top</div>
+		<div class="entrance check">Paradox Mid</div>
+		<div class="entrance check">Paradox Block</div>
+		<div class="entrance check">Spectacle View</div>
+		<div class="entrance check">Spectacle Grab</div>
+		<div class="entrance check">Spectacle Drop</div>
+		
+
+		<div class="entrance check">Spiral<br>Top</div>
+		<div class="entrance check">Spiral<br>Bottom</div>
+		<div class="entrance check">SBunny Top</div>
+		<div class="entrance check">SBunny Bottom</div>
+		<div class="entrance check">Hookshot Cave</div>
+		<div class="entrance check">Hookshot Cave</div>		
+	
+		<div class="entrance dungeon">HC West</div>		
+		<div class="entrance dungeon">HC Main</div>		
+		<div class="entrance dungeon">HC East</div>		
+		<div class="entrance dungeon">DP West</div>		
+		<div class="entrance dungeon">DP Main</div>		
+		<div class="entrance dungeon">DP East</div>		
+
+		<div class="entrance other">Bumper Cave</div>
+		<div class="entrance other">Bumper Cave</div>
+		<div class="entrance dungeon">TR Main</div>		
+		<div class="entrance dungeon">TR West</div>		
+		<div class="entrance dungeon">TR East</div>		
+		<div class="entrance dungeon">TR Back</div>		
+		
+	</div>
+
+</body>
+
+</html>
