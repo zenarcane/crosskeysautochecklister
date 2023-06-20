@@ -113,8 +113,12 @@
 	<script type="text/javascript">
 	
 	function toggle_chest(x) {
-		var element = document.getElementById(x).click()
-		
+		var element = document.getElementById(x);
+		if (element === null || element === undefined) {
+		}
+			else {
+			element.click();
+			}
 	};
 	</script>
    <script type="text/javascript">
