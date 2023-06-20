@@ -209,7 +209,7 @@ function autotrackDoTracking(data) {
 		//updatechest(24, 0x3C9, 0x02); // Bottle Vendor
 		//updatechest(25, 0x410, 0x10); // Sahasrahla (GP)
 		//updatechest(26, 0x410, 0x08); // Stump Kid
-		//updatechest(27, 0x410, 0x04); // Sick Kid
+		updatechest(29, 0x410, 0x04); // Sick Kid
 		//updatechest(28, 0x3C9, 0x10); // Purple Chest
 		//updatechest(29, 0x3C9, 0x01); // Hobo
 		//updatechest(30, 0x411, 0x01); // Ether Tablet
@@ -217,7 +217,7 @@ function autotrackDoTracking(data) {
 		//updatechest(32, 0x410, 0x20); // Catfish
 		//updatechest(33, 0x410, 0x02); // King Zora
 		//updatechest(34, 0x410, 0x01); // Lost Old Man
-		//updatechest(35, 0x411, 0x20); // Potion Shop
+		updatechest(28, 0x411, 0x20); // Potion Shop
 		updatechest(36, 0x1C3, 0x02); // Lost Wood Hideout
 		updatechest(37, 0x1C5, 0x02); // Lumberjack
 		updatechest(38, 0x1D5, 0x04); // Spectacle Rock Cave
@@ -226,7 +226,7 @@ function autotrackDoTracking(data) {
 		updatechest(41, 0x24D, 0x02); // Checkerboard Cave
 		updatechest(42, 0x24F, 0x04); // Hammer Pegs
 		updatechest(43, 0x410, 0x80); // Library
-		updatechest(44, 0x411, 0x10); // Mushroom
+		//updatechest(44, 0x411, 0x10); // Mushroom
 		//updatechest(45, 0x283, 0x40); // Spectacle Rock
 		//updatechest(46, 0x285, 0x40); // Floating Island
 		//updatechest(47, 0x2A8, 0x40); // Race Game
