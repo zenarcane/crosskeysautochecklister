@@ -6,5 +6,13 @@ Autotracking code by BigDunka
 
 Modified Checklister and Autotracking code to add autotracking to item caves for Crosskeys.  This will only mark off item caves, which is legal under ALttPR ruleset.  Connector entrances/exits are there for convenience marking to know what connectors are left.
 
+How to use:
+
+Download checklister_v2.html and autot2.js
+Keep them in the same folder
+Run SNI (Unsure if QUSB2SNES works as I only use SNI)
+Run checklister_v2.html - resize as necessary
+
 Known issues that may (?) be able to be resolved:
+
 Manually tracking an item cave to the off state and then picking up the item will turn the check back on
