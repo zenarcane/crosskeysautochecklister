@@ -183,7 +183,7 @@ function autotrackDoTracking(data) {
 		//updatechest(2, 0x208, 0x10); // Link's House
 		updatechest(3, 0x1FC, 0x10); // Spiral Cave
 		updatechest(4, 0x218, 0x10); // Mimic Cave
-		updatechest(5, 0x206, 0x10); // T A V E R N
+		//updatechest(5, 0x206, 0x10); // T A V E R N
 		updatechest(6, 0x210, 0x10); // Chicken House
 		updatechest(7, 0x20C, 0x10); // Brewery
 		updatechest(8, 0x238, 0x10); // C House
